@@ -8,3 +8,11 @@ button {
   padding: 30px;
   margin: 10px;
 }
+
+body {
+  background-image: radial-gradient(
+              circle at center,
+              rgba(0, 17, 253, 0.763) 0%,
+              rgba(13, 24, 34, 0.86) 42%
+            );
+}

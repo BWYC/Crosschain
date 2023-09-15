@@ -139,19 +139,27 @@ function App() {
 
   if (!isReady) {
     return (
-      <div style={{ padding: 30 }}>
-        <h1>Sats Connect Test App - {network}</h1>
-        <div>Please connect your wallet to continue</div>
+      
+      <div style={{ padding: 30, alignContent: "center", display: "flex", flexDirection: "column",  }}>
+      <div style={{height: "70px", maxWidth: "100%", backdropFilter: "blur(10px)", background: "transparent", borderBottom: "solid", borderColor: "white", marginBottom: "5%", borderRadius: "16px"}}>
 
-        <div style={{ background: "lightgray", padding: 30, marginTop: 10 }}>
+          <button style={{ height: 30, width: 180, background: "black", borderRadius: "16px", color: "white", borderStyle: "solid", borderColor: "white", fontFamily: "courier" }} onClick={onConnectClick}>
+            CONNECT
+          </button>
+
+
+</div>
+        <img alt="logo" src="/logo2.png" width={450} height={200}/>
+        <h1 style={{color: "white"}}>BWYC CROSSCHAIN {network}</h1>
+        <div style={{color: "white"}}>Please connect your wallet to continue</div>
+
+        <div style={{ background: "transparent", padding: 30, marginTop: 10 }}>
           <button style={{ height: 30, width: 180 }} onClick={toggleNetwork}>
             Switch Network
           </button>
           <br />
           <br />
-          <button style={{ height: 30, width: 180 }} onClick={onConnectClick}>
-            Connect
-          </button>
+
         </div>
       </div>
     );
